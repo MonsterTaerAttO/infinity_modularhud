@@ -1,6 +1,6 @@
 # infinity_modularhud
 
-1NF1N17Y Development can be contacted here: https://discord.gg/CPwGfZY
+1NF1N17Y Development can be contacted here: https://discord.gg/wMD6Ed2szp
 
 This script has been a work in progress for about a week and a half.
 
