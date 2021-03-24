@@ -1,146 +1,42 @@
-﻿.mainHealth {
-  display: flex;
-  position: absolute;
-  bottom: 29%;
-  left: 5.5%;
-  height: auto;
-  opacity: 0.6;
+﻿.healthdiv {
+    display: block;
+    position: absolute;
+    bottom: 30%;
+    left: 4.8%;
+    border-radius: 100%;
 }
 
-.mainArmor {
-  display: flex;
-  position: absolute;
-  bottom: 25%;
-  left: 3%;
-  height: auto;
-  opacity: 0.6;
+.armordiv {
+    display: block;
+    position: absolute;
+    bottom: 25%;
+    left: 2.2%;
+    border-radius: 100%;
 }
 
-.hudCar {
-  display: none;
-  position: absolute;
-  left: 80%;
-  bottom: 4.5%;
-  display: flex;
-  opacity: 0.6;
+.fueldiv {
+    display: none;
+    position: absolute;
+    bottom: 19.8%;
+    left: 1.1%;
+    border-radius: 100%;
+}
+
+.seatbeltdiv {
+    display: none;
+    position: absolute;
+    bottom: 15.2%;
+    left: 1%;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .progress {
-  -webkit-transition: 0.35s stroke-dashoffset;
-  -o-transition: 0.35s stroke-dashoffset;
-  transition: 0.35s stroke-dashoffset;
-  -webkit-transform: rotate(140deg);
-  -ms-transform: rotate(140deg);
-  transform: rotate(140deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-
-.progressplayer {
-  -webkit-transition: 0.35s stroke-dashoffset;
-  -o-transition: 0.35s stroke-dashoffset;
-  transition: 0.35s stroke-dashoffset;
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-
-.backgroundCircle {
-  -webkit-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-
-.mph {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-}
-
-.fuel {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(1.5);
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: 50% 40%;
-  background-size: 45% 45%;
-  opacity: 1;
-}
-
-.counter {
-  height: 100%;
-  width: 100%;
-}
-
-.counter .counter2 {
-  position: relative;
-  height: 200%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-.counter .counter2 div {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 10px;
-}
-.counter .counter2 div svg {
-  opacity: 0.2;
-}
-.counter .counter2 .active svg {
-  opacity: 0.8;
-}
-
-.counter .counter2 .speedometer {
-  width: 100px;
-  height: 100px;
-  text-align: center;
-}
-.counter .counter2 .speedometer svg {
-  opacity: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: scale(2) translate(-25%, -25%);
-  -ms-transform: scale(2) translate(-25%, -25%);
-  transform: scale(2) translate(-25%, -25%);
-}
-
-.counter .counter2 .speedometer .text {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: 0;
-}
-.counter .counter2 .speedometer .text .speed {
-  color: white;
-  font-size: 27px;
-  display: block;
-  font-family: "Roboto", sans-serif;
-}
-
-.addon {
-  display: flex;
-  position: absolute;
-  top: 45%;
-  left: 15%;
-}
-
-.car-seatbelt-info img {
-  display: flex;
-  position: absolute;
-  top: 15%;
-  width: 2.5vh;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    transform-origin: 50% 50%;
+    -webkit-transition: 0.35s stroke-dashoffset;
+    -o-transition: 0.35s stroke-dashoffset;
+    transition: 0.35s stroke-dashoffset;
 }

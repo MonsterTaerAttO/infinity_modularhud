@@ -1,25 +1,43 @@
+-- ░░███╗░░███╗░░██╗███████╗░░███╗░░███╗░░██╗░░███╗░░███████╗██╗░░░██╗░░░██╗░██╗░███████╗░█████╗░░░██╗██╗░█████╗░
+-- ░████║░░████╗░██║██╔════╝░████║░░████╗░██║░████║░░╚════██║╚██╗░██╔╝██████████╗██╔════╝██╔═══╝░░██╔╝██║██╔═══╝░
+-- ██╔██║░░██╔██╗██║█████╗░░██╔██║░░██╔██╗██║██╔██║░░░░░░██╔╝░╚████╔╝░╚═██╔═██╔═╝██████╗░██████╗░██╔╝░██║██████╗░
+-- ╚═╝██║░░██║╚████║██╔══╝░░╚═╝██║░░██║╚████║╚═╝██║░░░░░██╔╝░░░╚██╔╝░░██████████╗╚════██╗██╔══██╗███████║██╔══██╗
+-- ███████╗██║░╚███║██║░░░░░███████╗██║░╚███║███████╗░░██╔╝░░░░░██║░░░╚██╔═██╔══╝██████╔╝╚█████╔╝╚════██║╚█████╔╝
+-- ╚══════╝╚═╝░░╚══╝╚═╝░░░░░╚══════╝╚═╝░░╚══╝╚══════╝░░╚═╝░░░░░░╚═╝░░░░╚═╝░╚═╝░░░╚═════╝░░╚════╝░░░░░░╚═╝░╚════╝░
+
+-- █▀▄▀█ █▀█ █▀▄ █░█ █░░ ▄▀█ █▀█   █░█ █░█ █▀▄
+-- █░▀░█ █▄█ █▄▀ █▄█ █▄▄ █▀█ █▀▄   █▀█ █▄█ █▄▀
+
+-- Need assistance? Need a script made? Join here. https://discord.gg/wMD6Ed2szp
+
 fx_version 'cerulean'
 game 'gta5'
-version '1.0.1'
-description 'nafing Hud DC: ✪ dydolek#2137'
+version '1.5.0'
+author '1NF1N17Y#5646'
+description '1NF1N17Y Development | Modular Hud'
 
 ui_page 'html/ui.html'
 
 client_scripts {
-	'client.lua',
+    'shared/config.lua',
+    'client/cl_main.lua'
 }
 
 server_scripts {
-	"server.lua"
+    'shared/config.lua',
+    'server/sv_main.lua'
 }
 
 files {
-	'html/ui.html',
-	'html/style.css',
-	'html/main.js',
-	'html/img/*.png',
+    'html/ui.html',
+    'html/style.css',
+    'html/main.js',
+    'html/img/*.png'
 }
 
-export 'HealthEdit'
-export 'ArmorEdit'
-export 'FuelEdit'
+exports {
+    'ToggleDisp',
+    'HealthEdit',
+    'ArmorEdit',
+    'FuelEdit'
+}
