@@ -432,7 +432,7 @@ Citizen.CreateThread(
             local vehicle = GetVehiclePedIsIn(player) -- This grabs the players vehicle using the PED ID.
             local class = GetVehicleClass(vehicle)
             if Config.LegacyFuel then
-                local fuel = exports.vehicle_fuel:GetFuel(vehicle) -- Calls an exported function to get the fuel precentage.
+                local fuel = exports.LegacyFuel:GetFuel(vehicle) -- Calls an exported function to get the fuel precentage.
             else
                 local fuel = exports.frfuelplus:getCurrentFuelLevel()
             end
